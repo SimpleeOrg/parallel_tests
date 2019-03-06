@@ -9,6 +9,6 @@ Gem::Specification.new name, ParallelTests::VERSION do |s|
   s.files = Dir["{lib,bin}/**/*"] + ["Readme.md"]
   s.license = "MIT"
   s.executables = ["parallel_spinach", "parallel_cucumber", "parallel_rspec", "parallel_test"]
-  s.add_runtime_dependency "parallel"
+  s.add_runtime_dependency "parallel", '1.13.0' # last version that supports ruby 2.0.0
   s.required_ruby_version = '>= 2.0.0'
 end
